@@ -1,1 +1,1 @@
-find . -name "*.sh" | cut -d"." -f2 | sed 's|.*||'
+find . -type f -name "*.sh" -exec basename {} .sh \;
